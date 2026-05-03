@@ -1,4 +1,3 @@
-// routes/subjects.js
 const express = require('express');
 const router = express.Router();
 const { loadData, saveData } = require('../dataAccess');
@@ -68,7 +67,7 @@ router.get('/:id', (req, res) => {
   }
 
   const id = req.params.id;
-  // Validate ID – must be a positive integer (the format we generate)
+  // Validate ID – must be a positive integer 
   if (!id || !/^\d+$/.test(id)) {
     return res.status(400).json({
       errors: [formatError(
@@ -118,7 +117,7 @@ router.post('/', (req, res) => {
     ));
   }
 
-  // --- Field validation with detailed error maps ---
+  // validation with error maps
   const { name, color } = req.body;
   const invalidTypeKeyMap = {};
   const invalidValueKeyMap = {};
@@ -259,7 +258,7 @@ router.put('/:id', (req, res) => {
 
   if (name !== undefined) {
     const newName = name.trim();
-    // Check uniqueness (except itself)
+    // Check uniqueness 
     if (data.subjects.some(s => s.id !== parseInt(id, 10) && s.name.toLowerCase() === newName.toLowerCase())) {
       return res.status(400).json({
         errors: [formatError(

@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const subjectsRouter = require('./routes/subjects');
 const notesRouter = require('./routes/notes');
@@ -8,7 +7,6 @@ const PORT = 3000;
 
 app.use(express.json());
 
-// Routes
 app.use('/api/subjects', subjectsRouter);
 app.use('/api/notes', notesRouter);
 

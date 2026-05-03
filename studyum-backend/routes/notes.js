@@ -1,10 +1,9 @@
-// routes/notes.js
 const express = require('express');
 const router = express.Router();
 const { loadData, saveData } = require('../dataAccess');
 
 // ------------------------------------------------------------
-// Utility functions (same as in subjects.js)
+// Utility functions 
 // ------------------------------------------------------------
 function isValidHexColor(color) {
   if (typeof color !== 'string') return false;
@@ -328,8 +327,8 @@ router.put('/:id', (req, res) => {
     if (typeof date !== 'string' || !isValidDateString(date)) {
       invalidTypeKeyMap.date = 'Not a valid date';
     } else if (isFutureDate(date)) {
-      // future date check will be done later, but we can also set error here
-      invalidTypeKeyMap.date = 'Date cannot be in the future'; // will be caught in a dedicated step, but we can include here if we want
+      
+      invalidTypeKeyMap.date = 'Date cannot be in the future'; 
     }
   }
 
