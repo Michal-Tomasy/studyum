@@ -1,10 +1,67 @@
 {
   "subjects": [
     {
-      "id": 1777838511577,
-      "name": "Mathematics",
-      "color": "#FF5733"
+      "id": 1779028257818,
+      "name": "Matika",
+      "color": "#ffffff"
+    },
+    {
+      "id": 1779029460475,
+      "name": "eeeeeeeee",
+      "color": "#a71b1b"
+    },
+    {
+      "id": 1779032594894,
+      "name": "E",
+      "color": "#b61111"
+    },
+    {
+      "id": 1779032600701,
+      "name": "B",
+      "color": "#000000"
+    },
+    {
+      "id": 1779032608110,
+      "name": "V",
+      "color": "#d9ca26"
+    },
+    {
+      "id": 1779033004723,
+      "name": "BBBB",
+      "color": "#000000"
+    },
+    {
+      "id": 1779033087866,
+      "name": "gggg",
+      "color": "#2e1f05"
+    },
+    {
+      "id": 1779033099006,
+      "name": "ffffffff",
+      "color": "#ffd1d1"
     }
   ],
-  "notes": []
+  "notes": [
+    {
+      "id": 1779032698134,
+      "name": "BBBB",
+      "date": "2026-05-17",
+      "content": "slllllllllllllllllllllll\nlllllllllllllllllllll\nlllllllllllllllllllll\nllllllllllllllllllllll",
+      "subjectId": 1779032608110
+    },
+    {
+      "id": 1779032710799,
+      "name": "gggggggg",
+      "date": "2026-05-08",
+      "content": "lllllllllllllllllllll\nlllllllllllllllllllll\nlllllllllllllllllllll\nlllllllllllllllllllll",
+      "subjectId": 1779032608110
+    },
+    {
+      "id": 1779032789382,
+      "name": "CCCCCCCCC",
+      "date": "2026-05-17",
+      "content": "ujjjjjjjj",
+      "subjectId": 1779032608110
+    }
+  ]
 }

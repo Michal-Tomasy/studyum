@@ -32,7 +32,7 @@ function formatError(code, message, params = {}) {
 // GET /api/subjects – list all subjects
 // ------------------------------------------------------------
 router.get('/', (req, res) => {
-  const allowedQueryKeys = [];                        // no query params allowed
+  const allowedQueryKeys = [];                        
   const unsupported = getUnsupportedKeys(req.query, allowedQueryKeys);
 
   const warnings = [];
@@ -55,7 +55,7 @@ router.get('/', (req, res) => {
 // GET /api/subjects/:id – get a single subject
 // ------------------------------------------------------------
 router.get('/:id', (req, res) => {
-  const allowedQueryKeys = [];                        // only path parameter allowed
+  const allowedQueryKeys = [];                      
   const unsupported = getUnsupportedKeys(req.query, allowedQueryKeys);
   const warnings = [];
   if (unsupported.length > 0) {
@@ -117,7 +117,7 @@ router.post('/', (req, res) => {
     ));
   }
 
-  // validation with error maps
+  // validation
   const { name, color } = req.body;
   const invalidTypeKeyMap = {};
   const invalidValueKeyMap = {};
@@ -216,7 +216,7 @@ router.put('/:id', (req, res) => {
   const { name, color } = req.body;
   const invalidTypeKeyMap = {};
   const invalidValueKeyMap = {};
-  // no missingKeyMap because fields are optional for update
+  
 
   if (name !== undefined) {
     if (typeof name !== 'string' || name.trim().length === 0) {
